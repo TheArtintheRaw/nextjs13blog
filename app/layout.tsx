@@ -1,4 +1,5 @@
 import 'tailwindcss/tailwind.css'
+import Script from 'next/script'
 
 export default function RootLayout({
   children,
@@ -9,6 +10,12 @@ export default function RootLayout({
     <html lang="en">
       <head />
       <body className="bg-white text-black">{children}</body>
+      <Script 
+  src="https://survey-dashboard-omega.vercel.app//tracker.min.js"
+  data-site-id="test-site-1"
+  data-api-base="https://survey-dashboard-omega.vercel.app/"
+  async
+/>
     </html>
   )
 }
