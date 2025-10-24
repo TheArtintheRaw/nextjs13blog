@@ -11,9 +11,9 @@ export default function RootLayout({
       <head />
       <body className="bg-white text-black">{children}</body>
       <Script 
-  src="https://survey-dashboard-omega.vercel.app//tracker.min.js"
+  src="https://survey-dashboard-omega.vercel.app/tracker.min.js"
   data-site-id="test-site-1"
-  data-api-base="https://survey-dashboard-omega.vercel.app/"
+  data-api-base="https://survey-dashboard-omega.vercel.app"
   async
 />
     </html>
