@@ -13,7 +13,6 @@ export default function RootLayout({
       <Script 
   src="https://survey-dashboard-omega.vercel.app/tracker.min.js"
   data-site-id="test-site-1"
-  data-api-base="https://survey-dashboard-omega.vercel.app"
   async
 />
     </html>
