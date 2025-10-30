@@ -8,15 +8,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-        <!-- Rival Survey Widget - Optimized -->
-<link rel="dns-prefetch" href="https://survey-dashboard-omega.vercel.app">
-<link rel="preconnect" href="https://survey-dashboard-omega.vercel.app" crossorigin>
-<script src="https://survey-dashboard-omega.vercel.app/tracker-optimized.min.js" data-site-id="test-site-1" async></script>
+        
       <head />
-      <body className="bg-white text-black">{children}
-    
-      </body>
-      
+      <body className="bg-white text-black">{children}</body>
+      <!-- Rival Survey Widget - Optimized -->
+      <link rel="dns-prefetch" href="https://survey-dashboard-omega.vercel.app">
+      <link rel="preconnect" href="https://survey-dashboard-omega.vercel.app" crossorigin>
+      <script src="https://survey-dashboard-omega.vercel.app/tracker-optimized.min.js" data-site-id="test-site-1" async></script>
     </html>
   )
 }
