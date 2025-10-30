@@ -9,12 +9,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body className="bg-white text-black">{children}</body>
-      <Script 
-  src="https://survey-dashboard-omega.vercel.app/tracker.min.js"
-  data-site-id="test-site-1"
-  async
-/>
+      <body className="bg-white text-black">{children}
+      <script src="https://survey-dashboard-omega.vercel.app/tracker.min.js" data-site-id="test-site-1" async></script>
+      </body>
+      
     </html>
   )
 }
