@@ -1,20 +1,26 @@
-import 'tailwindcss/tailwind.css'
-import Script from 'next/script'
-
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode
-}) {
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="en">
-      <link rel="dns-prefetch" href="https://survey-dashboard-omega.vercel.app">
-      <link rel="preconnect" href="https://survey-dashboard-omega.vercel.app" crossorigin>  
-      <head />
-      <body className="bg-white text-black">{children}</body>
-      <!-- Rival Survey Widget - Optimized -->
-      
-      <Script src="https://survey-dashboard-omega.vercel.app/tracker-optimized.min.js" data-site-id="test-site-1" async />
+      <head>
+        <link rel="dns-prefetch" href="https://survey-dashboard-omega.vercel.app" />
+        <link rel="preconnect" href="https://survey-dashboard-omega.vercel.app" crossOrigin="anonymous" />
+      </head>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        {children}
+        
+        {/* Rival Survey Widget - Optimized */}
+        <Script 
+          src="https://survey-dashboard-omega.vercel.app/tracker-optimized.min.js" 
+          data-site-id="test-site-1" 
+          strategy="afterInteractive"
+        />
+      </body>
     </html>
-  )
+  );
 }
