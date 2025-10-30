@@ -1,17 +1,18 @@
+import 'tailwindcss/tailwind.css'
+import Script from 'next/script'
+
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en">
       <head>
         <link rel="dns-prefetch" href="https://survey-dashboard-omega.vercel.app" />
         <link rel="preconnect" href="https://survey-dashboard-omega.vercel.app" crossOrigin="anonymous" />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className="bg-white text-black">
         {children}
         
         {/* Rival Survey Widget - Optimized */}
@@ -22,5 +23,5 @@ export default function RootLayout({
         />
       </body>
     </html>
-  );
+  )
 }
