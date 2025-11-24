@@ -8,10 +8,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-<link rel="dns-prefetch" href="https://survey-dashboard-omega.vercel.app">
-<link rel="preconnect" href="https://survey-dashboard-omega.vercel.app" crossorigin>
-      <head />
-
+        <head>
+      <link rel="dns-prefetch" href="https://survey-dashboard-omega.vercel.app" />
+      <link rel="preconnect" href="https://survey-dashboard-omega.vercel.app" crossorigin />
+      </head>
       <body className="bg-white text-black">
         {children}
         
