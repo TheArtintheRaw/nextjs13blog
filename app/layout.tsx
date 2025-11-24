@@ -16,7 +16,7 @@ export default function RootLayout({
         {/* Rival Survey Widget - Optimized */}
         <Script 
           src="https://survey-dashboard-omega.vercel.app/tracker-optimized.min.js" 
-          data-site-id="test-site-1" 
+          data-site-id="nextblog" 
           strategy="afterInteractive"
         />
       </body>
