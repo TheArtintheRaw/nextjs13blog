@@ -8,17 +8,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+<link rel="dns-prefetch" href="https://survey-dashboard-omega.vercel.app">
+<link rel="preconnect" href="https://survey-dashboard-omega.vercel.app" crossorigin>
       <head />
 
       <body className="bg-white text-black">
         {children}
         
-        {/* Rival Survey Widget - Optimized */}
-        <Script 
-          src="https://survey-dashboard-omega.vercel.app/tracker-optimized.min.js" 
-          data-site-id="nextblog" 
-          strategy="afterInteractive"
-        />
+<script src="https://survey-dashboard-omega.vercel.app/tracker-optimized.min.js" data-site-id="nextblog" async></script>
       </body>
     </html>
   )
