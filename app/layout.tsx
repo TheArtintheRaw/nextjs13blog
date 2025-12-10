@@ -17,7 +17,7 @@ export default function RootLayout({
 
         <Script 
           src="https://survey-dashboard-omega.vercel.app/tracker-optimized.min.js"
-          data-site-id="c5edf465-8050-43ca-9fbe-7b1859f8f73b"
+          data-site-id="nextblog1"
           data-api-base="https://survey-dashboard-omega.vercel.app"
           strategy="afterInteractive"
         />
